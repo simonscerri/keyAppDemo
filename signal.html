@@ -152,7 +152,7 @@ function generateChart(chart_name, div, xdataSet, dataSet){
 	 		var rssi_array = new Array();
 	 		var divName = "chart1";
 	 		var chName = "temp";
-	 		$.getJSON( "api/request_data4.php?device_id="+deviceIdent, function( data ) {
+	 		$.getJSON( "http://keys.m2mconnected.com/api/request_data4.php?device_id="+deviceIdent, function( data ) {
 			//$.getJSON( "api/request_data4.php", function( data ) {
 	 			for (var i=0; i<data.length; i++){
 	 				date_time_array.push(data[i].date_time);

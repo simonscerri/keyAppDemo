@@ -102,7 +102,7 @@
 			<script>
 				var auto_refresh = setInterval(
 					function (){
-						$.getJSON("api/request_data2.php?device_id="+deviceIdent, function(result){
+						$.getJSON("http://keys.m2mconnected.com/api/request_data2.php?device_id="+deviceIdent, function(result){
 						//$.getJSON("api/request_data2.php", function(result){
 							$.each(result, function(i, field){
 								//alert("value of i is : " + i);

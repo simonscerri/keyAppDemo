@@ -102,7 +102,7 @@
 				var auto_refresh = setInterval(
 					function (){
 						//console.log("Use Device Id for get request: " + deviceIdent);
-						$.getJSON("api/request_data.php?device_id=" + deviceIdent, function(result){
+						$.getJSON("http://http://keys.m2mconnected.com/api/request_data.php?device_id=" + deviceIdent, function(result){
 							$.each(result, function(i, field){
 								if (i == "timestamp"){
 									$("#"+i).text(field);
