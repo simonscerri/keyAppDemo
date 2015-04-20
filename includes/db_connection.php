@@ -1,17 +1,24 @@
 <?php //create a connection to the database
-/*
-	require("constants.php");
-    $connection1 = new mysqli(DB_SERVER1, DB_USER1, DB_PASSWORD1, DB_NAME1);
+
+	define("DB_SERVER", "mysql01.internal.m2mconnected.com");
+    define("DB_USER","keyApp_read");
+    define("DB_PASSWORD", "Tmwyso&ge9v4bie");
+    define("DB_NAME", "keys");
+
+	$link = mysql_connect(DB_SERVER, DB_USER, DB_PASSWORD); 
+	if (!$link) { 
+		die('Could not connect: ' . mysql_error()); 
+	} else {
+		mysql_select_db(DB_NAME); 
+	}
+	
+	/*
+	$connection1 = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
     if ($connection1->connect_errno) {
         die("Database connection failed:" . mysql_error());
     }
-*/
-	$link = mysql_connect('mysql01.internal.m2mconnected.com', 'keyApp_read', 'Tmwyso&ge9v4bie'); 
-	if (!$link) { 
-		die('Could not connect: ' . mysql_error()); 
-	} 
-	
-	mysql_select_db(keys); 
-*/
+
+	*/
+
 ?> 
     
